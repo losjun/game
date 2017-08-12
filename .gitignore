@@ -2,3 +2,9 @@
 .DS_Store
 
 .DS_Store
+
+*.xcbkptlist
+
+OpenGL/OpenGL.xcodeproj/project.pbxproj
+
+OpenGL/OpenGL.xcodeproj/project.pbxproj
