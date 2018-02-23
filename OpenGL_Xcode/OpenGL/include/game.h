@@ -13,9 +13,9 @@ enum GameState{
 class Game
 {
 public:
-    GameState m_state;
-    bool    m_keys[1024];
-    int     m_width, m_height;
+    GameState State;
+    bool    Keys[1024];
+    int     Width, Height;
     Game(int width, int height);
     ~Game();
     void Init();
@@ -23,3 +23,5 @@ public:
     void Update(float delta);
     void Render();
 }
+
+#endif
