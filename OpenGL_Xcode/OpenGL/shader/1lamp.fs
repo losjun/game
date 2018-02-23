@@ -8,12 +8,13 @@ uniform vec3 lightPos;
 uniform vec3 viewPos;
 uniform vec3 lightColor;
 uniform vec3 objectColor;
+uniform vec4 color;
 
 void main()
 {
     
     //ambient
-    float ambientStrength = 0.1;
+    ／/*float ambientStrength = 0.1;
     vec3 ambient = ambientStrength * lightColor；
     
     //diffuse
@@ -31,12 +32,13 @@ void main()
     vec3 specular = specularStrength * spec * lightColor;
     
     vec3 result = (ambient + diffuse + specular) * objectColor;
-    FragColor = vec4(result, 1.0);
+      */
+    FragColor = color;
     
     
     
     
     
     
-    FragColor = vec4(result, 1.0); // set alle 4 vector values to 1.0
+    //FragColor = vec4(result, 1.0); // set alle 4 vector values to 1.0
 }
