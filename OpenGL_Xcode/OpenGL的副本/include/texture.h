@@ -2,7 +2,7 @@
 #ifndef TEXTURE_H
 #define TEXTURE_H
 
-#include <GL/glfw3.h>
+#include <GLFW/glfw3.h>
 
 class Texture2D
 {
@@ -27,6 +27,6 @@ public:
     void Bind() const; // Binds the texture as the current active GL_TEXTURE_2D texture objext
     
     
-}
+};
 
 #endif
