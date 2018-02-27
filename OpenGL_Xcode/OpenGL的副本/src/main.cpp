@@ -7,7 +7,8 @@
 
 #include "shader.h"
 #include "camera.h"
-
+#include "texture.h"
+#include "game.h"
 #include <iostream>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);

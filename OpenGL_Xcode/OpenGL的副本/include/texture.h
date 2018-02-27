@@ -2,13 +2,12 @@
 #ifndef TEXTURE_H
 #define TEXTURE_H
 
-#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 class Texture2D
 {
 public:
-    unsigned int ID; //Id of the texture object
+    int Id; //Id of the texture object
     
     int Width, Height; // Width and height of loaded image in pixels
     

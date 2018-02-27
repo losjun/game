@@ -1,4 +1,5 @@
 #include "game.h"
+
 //#include "resource_manager.h"
 
 Game::Game(int width, int height)
@@ -27,7 +28,4 @@ void Game::ProcessInput(float delta)
     
 }
 
-void Game::Render()
-{
-    
-}
+

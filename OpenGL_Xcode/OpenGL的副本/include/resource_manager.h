@@ -4,6 +4,7 @@
 #include <map>
 
 #include <string>
+#include <GLFW/glfw3>
 
 #include "texture.h"
 #include "shader.h"
@@ -18,7 +19,7 @@ public:
     
     static Shader   GetShader(std::string name);
     
-    static Texture2D LoadTexture(const char *file, bool alpha, std::string name);
+    static Texture2D LoadTexture(const chat *file, bool alpha, std::string name);
     
     static Texture2D GetTexture(std::string name);
     
@@ -30,6 +31,5 @@ private:
     static Shader loadShaderFromFile(const char *vShaderFile, const char *fShaderFile, const char *gShaderFile = nullptr);
     
     static Texture2D loadTextureFromFile(const char *file, bool alpha);
-};
+}
 
-#endif

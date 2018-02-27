@@ -1,4 +1,4 @@
-#ifndef GAME_H
+#ifdef GAME_H
 #define GAME_H
 
 #include <glad/glad.h>
@@ -8,7 +8,7 @@ enum GameState{
     GAME_ACTIVE,
     GAME_MENU,
     GAME_WIN
-};
+}
 
 class Game
 {
@@ -22,6 +22,6 @@ public:
     void ProcessInput(float delta);
     void Update(float delta);
     void Render();
-};
+}
 
 #endif
