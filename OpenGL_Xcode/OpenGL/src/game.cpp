@@ -27,4 +27,7 @@ void Game::ProcessInput(float delta)
     
 }
 
-
+void Game::Render()
+{
+    
+}
