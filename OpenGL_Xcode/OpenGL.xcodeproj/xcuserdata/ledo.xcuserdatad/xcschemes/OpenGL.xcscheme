@@ -49,7 +49,7 @@
       language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/ledo/Desktop/ios/OpenGL/OpenGL"
+      customWorkingDirectory = "/Users/ledo/Desktop/game/OpenGL_Xcode/OpenGL"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"

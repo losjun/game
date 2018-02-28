@@ -47,7 +47,6 @@
 		803683BD2043B5F900EC8CC7 /* texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = texture.cpp; sourceTree = "<group>"; };
 		803683C22045400700EC8CC7 /* sprite_render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sprite_render.h; sourceTree = "<group>"; };
 		803683C32045438D00EC8CC7 /* sprite_render.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sprite_render.cpp; sourceTree = "<group>"; };
-		803683C720454CE400EC8CC7 /* resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resource; sourceTree = "<group>"; };
 		80ED76B91F317C2600628E27 /* OpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		80ED76C31F31DF4100628E27 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		80ED76C61F32021E00628E27 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -55,6 +54,7 @@
 		80ED76CA1F32023400628E27 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		80ED76CC1F32024000628E27 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		80ED76CE1F32025F00628E27 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "../../../Downloads/glfw-3.2.1/build/src/Debug/libglfw3.a"; sourceTree = "<group>"; };
+		80F2543F2046DE6300933E76 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +76,11 @@
 		803683B22043B5C700EC8CC7 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				803683BA2043B5F900EC8CC7 /* game.cpp */,
-				803683BC2043B5F900EC8CC7 /* main.cpp */,
 				803683BB2043B5F900EC8CC7 /* resource_manager.cpp */,
 				803683BD2043B5F900EC8CC7 /* texture.cpp */,
 				803683C32045438D00EC8CC7 /* sprite_render.cpp */,
+				803683BC2043B5F900EC8CC7 /* main.cpp */,
+				803683BA2043B5F900EC8CC7 /* game.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 		80ED76BB1F317C2600628E27 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				803683C720454CE400EC8CC7 /* resource */,
+				80F2543F2046DE6300933E76 /* resources */,
 				803683B32043B5D100EC8CC7 /* include */,
 				803683B22043B5C700EC8CC7 /* src */,
 				80ED76C31F31DF4100628E27 /* glad.c */,
@@ -252,13 +252,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(glfw_header)",
-					"$(glm_header)",
-					"$(glad_header)",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				LIBRARY_SEARCH_PATHS = "$(glfw_lib)";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(glfw_lib)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -303,11 +300,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(glfw_header)",
-					"$(glm_header)",
-					"$(glad_header)",
-				);
+				HEADER_SEARCH_PATHS = "";
 				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
 				LIBRARY_SEARCH_PATHS = "$(glfw_lib)";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
