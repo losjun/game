@@ -4,6 +4,7 @@
 #include "resource_manager.h"
 #include "sprite_render.h"
 #include "game.h"
+#include "game_object.h"
 #include <iostream>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);

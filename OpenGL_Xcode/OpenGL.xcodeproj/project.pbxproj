@@ -19,6 +19,7 @@
 		80ED76CB1F32023400628E27 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80ED76CA1F32023400628E27 /* OpenGL.framework */; };
 		80ED76CD1F32024000628E27 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80ED76CC1F32024000628E27 /* CoreVideo.framework */; };
 		80ED76CF1F32025F00628E27 /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80ED76CE1F32025F00628E27 /* libglfw3.a */; };
+		80F254422047DD6E00933E76 /* game_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80F254402047DD6E00933E76 /* game_object.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,8 @@
 		80ED76CC1F32024000628E27 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		80ED76CE1F32025F00628E27 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = "../../../Downloads/glfw-3.2.1/build/src/Debug/libglfw3.a"; sourceTree = "<group>"; };
 		80F2543F2046DE6300933E76 /* resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = resources; sourceTree = "<group>"; };
+		80F254402047DD6E00933E76 /* game_object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game_object.cpp; sourceTree = "<group>"; };
+		80F254432047E8FA00933E76 /* game_object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game_object.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 				803683C32045438D00EC8CC7 /* sprite_render.cpp */,
 				803683BC2043B5F900EC8CC7 /* main.cpp */,
 				803683BA2043B5F900EC8CC7 /* game.cpp */,
+				80F254402047DD6E00933E76 /* game_object.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -95,6 +99,7 @@
 				803683B72043B5F000EC8CC7 /* stb_image.h */,
 				803683B82043B5F000EC8CC7 /* texture.h */,
 				803683C22045400700EC8CC7 /* sprite_render.h */,
+				80F254432047E8FA00933E76 /* game_object.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F254422047DD6E00933E76 /* game_object.cpp in Sources */,
 				803683A920401C5600EC8CC7 /* textureMain.cpp in Sources */,
 				80ED76C41F31DF4100628E27 /* glad.c in Sources */,
 				803683BE2043B5F900EC8CC7 /* game.cpp in Sources */,
